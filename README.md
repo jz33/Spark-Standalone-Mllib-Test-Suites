@@ -13,9 +13,9 @@ And further problem of the built-in tests is, they are not portable for outside 
     
 cannot be used outside since it is Spark private class. And
 
-    org.apache.spark.mllib.util.MLlibTestSparkContext
+    import org.apache.spark.mllib.util.MLlibTestSparkContext
     
-cannot be found outside because of the "main/test" layout of sbt project. 
+cannot be resovled outside because of the "main/test" layout of sbt project :( 
 
 Therefore, if you create an sbt project of Spark test, some modification or rewriting of built-in test suites are needed.
 
